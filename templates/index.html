@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://img.pikbest.com/wp/202345/ice-cream-cone-several-colorful-cones-sitting-on-a-black-background_9589693.jpg!bw700" class="d-block w-100 carousel-img">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fresh & Creamy Delights</h5>
+        <p>Experience the joy of rich, creamy ice cream made fresh every day.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://img.pikbest.com/wp/202408/ice-cream-cone-icon-gourmet-delight-black-cones-with-and-delectable-ingredients-on-a-white-textured-background_9912131.jpg!w700wp" class="d-block w-100 carousel-img">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Flavors That Melt Hearts</h5>
+        <p>From classic vanilla to exotic flavors, there's something for everyone.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPlCaB7NE-45zSexGKS3Z5YYE0VZHH7XvJkV38TciAmGsmub5D3SL6BXJFWFY2645jRgw&usqp=CAU" class="d-block w-100 carousel-img">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Scoop of Happiness</h5>
+        <p>Bring a smile to your day with our irresistible ice cream scoops.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Video Section -->
+<section class="video-section">
+  <div class="video-container">
+    <h2 class="video-title">Watch Our Ice Cream in Action!</h2>
+    <div class="video-wrapper">
+      <video controls autoplay loop muted>
+        <source src="{% static 'video/icecream.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Decorative Floating Icons -->
+      <img src="https://img.icons8.com/color/96/000000/ice-cream-bowl.png" class="decor-icon decor-left" alt="Ice Cream Bowl">
+      <img src="https://img.icons8.com/color/96/000000/ice-cream-bowl.png" class="decor-icon decor-right" alt="Soft Ice Cream">
+    </div>
+    <p class="video-text">
+      Freshly churned ice cream crafted with love. See the magic behind every scoop!
+    </p>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+  <h2>Why Choose Us?</h2>
+  <div class="features-container">
+    <div class="feature-card">
+      <h4>Fresh Ingredients</h4>
+      <p>We use only the freshest cream, fruits, and toppings in every scoop.</p>
+    </div>
+    <div class="feature-card">
+      <h4>Variety of Flavors</h4>
+      <p>From classic favorites to exotic tastes, we have flavors for everyone.</p>
+    </div>
+    <div class="feature-card">
+      <h4>Happiness Served</h4>
+      <p>Every scoop is crafted to bring joy and smiles to your day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section with Ratings -->
+<section class="testimonials-section">
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="testimonials-container">
+    
+    <!-- Testimonial Card 1 -->
+    <div class="testimonial-card">
+      <p>"Best ice cream I've ever had! The flavors are amazing."</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h5>- Priya S.</h5>
+    </div>
+
+    <!-- Testimonial Card 2 -->
+    <div class="testimonial-card">
+      <p>"Every visit feels like a treat. Highly recommend their chocolate cone!"</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h5>- Rohan K.</h5>
+    </div>
+
+    <!-- Testimonial Card 3 -->
+    <div class="testimonial-card">
+      <p>"Love the creativity in flavors and toppings. Delicious!"</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h5>- Anjali M.</h5>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-content">
+    <p>© 2025 🍦 IceCream Delight. All Rights Reserved.</p>
+    <p>www.icecreamdelight.com</p>
+  </div>
+</footer>
+
+<!-- Styles -->
+<style>
+/* Carousel */
+.carousel-img {
+  height: 70vh;
+  object-fit: cover;
+}
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  border-radius:10px;
+  padding:15px 20px;
+}
+
+/* Video Section */
+.video-section {
+  position: relative;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fff7e6, #fabad7ff);
+  text-align: center;
+  overflow: hidden;
+}
+.video-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  animation: fadeInDown 1.2s ease;
+}
+.video-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.video-wrapper video {
+  width: 80%;
+  max-width: 750px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border: 5px solid #fff;
+  transition: transform 0.3s ease-in-out;
+}
+.video-wrapper video:hover {
+  transform: scale(1.03);
+}
+/* Floating Decorative Icons */
+.decor-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+.decor-left { left: -60px; top: 40%; }
+.decor-right { right: -60px; top: 40%; }
+.video-text {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Features Section */
+.features-section {
+  padding:50px;
+  background:#fff;
+  text-align:center;
+}
+.features-section h2 {
+  margin-bottom:40px;
+  color:#333;
+}
+.features-container {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+.feature-card {
+  flex:1 1 250px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 50px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+.section-title {
+  margin-bottom: 40px;
+  color: #333;
+}
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.testimonial-card {
+  flex: 1 1 250px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+.rating {
+  margin: 10px 0;
+}
+.rating i {
+  color: #FFD700; /* Gold stars */
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+/* Footer */
+.footer-section {
+  padding: 5px 0;
+  text-align: center;
+  border-top: 1px solid #444;   
+  background-color: #000;      
+  font-size: 0.9rem;
+  color: #fff;
+}
+.footer-content p {
+  margin: 3px 0;
+  font-weight: 400;
+}
+
+/* Animations */
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<!-- Font Awesome for Ratings -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+{% endblock body %}

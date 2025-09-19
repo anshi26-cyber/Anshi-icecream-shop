@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Contact Us | Anshi IceCream Shop{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+  <!-- Hero Section -->
+  <div class="hero-section position-relative">
+    <img src="https://mapatr.com/wp-content/uploads/2023/12/man-touching-contact-symbols-internet-communication.jpg" 
+         class="d-block w-100 hero-img" alt="Contact Banner">
+    <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="hero-title">Get In Touch</h1>
+      <p class="hero-subtitle">We’d love to hear from you! Let's connect.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Form -->
+<div class="contact-container">
+  <div class="glass-card">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form action="#" method="post">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="Enter Your Name" required>
+      <input type="email" name="email" placeholder="Enter Your Email" required>
+      <input type="text" name="phone" placeholder="Enter Your Contact Number" required>
+      <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- Helpline -->
+<div class="helpline-official">
+  <p>📞 <strong>+91-123-456-7890</strong> | 📧 <strong>support@icecreamdelight.com</strong></p>
+</div>
+
+<style>
+body {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+/* Hero Section */
+.hero-section { position: relative; height: 70vh; }
+.hero-img {
+  width: 100%; height: 100%; object-fit: cover;
+  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3); filter: brightness(75%);
+}
+.hero-overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); color: #fff; text-align: center;
+}
+.hero-title { font-size: 3rem; font-weight: bold; letter-spacing: 2px; animation: fadeInDown 1s; }
+.hero-subtitle { font-size: 1.2rem; margin-top: 10px; animation: fadeInUp 1.2s; }
+
+/* Contact */
+.contact-container { display: flex; justify-content: center; padding: 50px 15px; }
+.glass-card {
+  width: 100%; max-width: 500px; background: rgba(255,255,255,0.85); backdrop-filter: blur(10px);
+  border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); padding: 30px; animation: fadeIn 1.5s;
+}
+.glass-card h2 { font-size: 2rem; font-weight: 600; color: #333; }
+.glass-card input, .glass-card textarea {
+  width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc;
+  border-radius: 8px; font-size: 1rem; transition: 0.3s;
+}
+.glass-card input:focus, .glass-card textarea:focus {
+  border-color: #007bff; outline: none; box-shadow: 0 0 6px rgba(0,123,255,0.3);
+}
+.glass-card textarea { resize: none; }
+.glass-card button {
+  width: 100%; padding: 12px; border: none; border-radius: 8px;
+  background: #007bff; color: #fff; font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+.glass-card button:hover { background: #0056b3; }
+
+/* Helpline */
+.helpline-official {
+  text-align: center; 
+  color: #555; font-size: 1rem; margin: 20px 0;
+  padding: 10px; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;
+}
+
+/* Animations */
+@keyframes fadeIn { from {opacity: 0; transform: translateY(30px);} to {opacity: 1; transform: translateY(0);} }
+@keyframes fadeInDown { from {opacity: 0; transform: translateY(-30px);} to {opacity: 1; transform: translateY(0);} }
+@keyframes fadeInUp { from {opacity: 0; transform: translateY(30px);} to {opacity: 1; transform: translateY(0);} }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .glass-card { padding: 20px; }
+}
+</style>
+{% endblock body %}

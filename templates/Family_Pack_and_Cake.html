@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container my-5">
+<h2 class="text-center mb-4 gradient-heading">🍨 Family Pack and Cake Collection 🍰</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://m.media-amazon.com/images/I/41HzuxXg0qL._SX385_.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Delicious Vanilla Ice Cream</p>
+          <p class="price">₹180</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://m.media-amazon.com/images/I/61YVxjiI4ML._UF1000,1000_QL80_.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Rajbhog IceCream</p>
+          <p class="price">₹250</p>
+
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://tiaraspantry.com/upload/product/_545b6999df9fb6f78358e61b5c413fca.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Kaju Draksh IceCream</p>
+          <p class="price">₹200</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://m.media-amazon.com/images/I/61UTX1S4UVL._UF1000,1000_QL80_.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Cassatta IceCream Cake</p>
+          <p class="price">₹399</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+      </div>
+       <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15oIrSZ2btVEqcG_PyJleMwl16_jQUbD4fQ&s" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Aristan Chocolate Cake</p>
+          <p class="price">₹359</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+       <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSuRhgh9l9pkg_Y3ZvEq6ouWHjpLQKXMy2ug&s" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Red Velvet IceCream Cake</p>
+          <p class="price">₹450</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+  </div>
+</div>
+
+<!-- FONT AWESOME -->
+<link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- Custom CSS -->
+<style>
+  body {
+  background: linear-gradient(135deg, #e1e9f4ff, #e4eef4ff);
+  font-family: 'Poppins', sans-serif;
+}
+  .gradient-heading {
+    box-shadow: 0 8px 20px rgba(255, 77, 109, 0.3);
+  color: #ff4d6d;
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient-heading:hover {
+  box-shadow: 0 12px 25px rgba(255, 77, 109, 0.5);
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #ffe0e6, #fff0f3);
+}
+
+  .icon-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .icon-buttons .btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .cart {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .heart {
+    border: 1px solid red;
+    color: red;
+    background: none;
+  }
+
+  .share {
+    border: 1px solid gray;
+    background: none;
+    color: gray;
+  }
+
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 5px 0;
+  }
+ .card {
+    transition: 0.3s ease;
+  }
+
+  .card-text {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+  }
+   .card:hover {
+    transform: scale(1.03);
+  }
+</style>
+{% endblock body %}

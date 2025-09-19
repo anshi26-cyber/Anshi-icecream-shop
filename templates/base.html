@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+          crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>{% block title %}{% endblock title %} Anshi IceCream Shop</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold text-light" href="/">Anshi IceCream</a>
+
+        <!-- Toggle button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <!-- Left Menu -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/services/icecream/">Ice Cream</a></li>
+                <li><a class="dropdown-item" href="/services/cone-and-bar/">Cone and Bar</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/services/family-pack-and-cake/">Family Pack and Cake</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact us</a></li>
+          </ul>
+
+          <!-- Centered Search Bar -->
+          <form class="d-flex mx-auto" role="search" style="width: 40%;" method="get" action="{% url 'search' %}">
+            <input class="form-control me-2" type="search" name="q" placeholder="Search for ice creams..." aria-label="Search" required>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <!-- Right Icons -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/wishlist" title="Wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cart" title="Cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    {% block body %} {% endblock body %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous"></script>
+
+    <!-- Custom Styling -->
+    <style>
+      /* Gradient hover for nav links */
+      .navbar-nav .nav-link:hover {
+        background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Icons hover effect */
+      .navbar .nav-link i:hover {
+        color: #ff6f61;
+        transition: 0.3s;
+      }
+
+      /* Search box responsiveness */
+      @media (max-width: 768px) {
+        form[role="search"] {
+          width: 100% !important;
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </body>
+</html>
+                                                                                                                                    

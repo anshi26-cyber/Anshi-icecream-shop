@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container my-5">
+  <h2 class="text-center mb-4 gradient-heading">Search Results for "{{ query }}"</h2>
+
+  {% if results %}
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      {% for ice in results %}
+        <div class="col">
+          <div class="card text-center shadow-sm">
+            {% if ice.image_url %}
+              <img src="{{ ice.image_url }}" class="card-img-top" alt="{{ ice.name }}">
+            {% endif %}
+            <div class="card-body">
+              <p class="card-text">{{ ice.name }}</p>
+              <p class="price">₹{{ ice.price }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-center">No results found for "{{ query }}".</p>
+  {% endif %}
+</div>
+{% endblock %}

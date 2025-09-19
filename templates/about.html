@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}About Us | Anshi IceCream Shop{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+  <!-- Hero Section -->
+  <div class="hero-section position-relative">
+    <img src="https://www.ktchnrebel.com/wp-content/uploads/2022/08/Various_coloured_ice_cream_shutterstock_1678666684.jpg" 
+         alt="Delicious Ice Creams" class="hero-img">
+
+    <div class="hero-overlay d-flex flex-column justify-content-center align-items-center">
+      <h1 class="hero-title">About Us</h1>
+      <p class="hero-subtitle">Crafting Happiness, One Scoop at a Time</p>
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <div class="about-content container mt-5 mb-5">
+    <div class="glass-card">
+      <p>Welcome to <strong>Anshi IceCream Shop</strong>! We are passionate about creating delicious and refreshing ice creams that bring joy to every bite. Our ingredients are always fresh and of the highest quality, ensuring a rich and creamy taste in every scoop.</p>
+
+      <p>Founded in <strong>2025</strong>, our mission is to spread happiness through our ice creams while promoting sustainability and care for the environment. We create flavors everyone loves and strive to make every customer experience memorable.</p>
+
+      <p>Innovation is at the heart of what we do. From classic vanilla and chocolate to exotic fruit blends, we are constantly experimenting with new flavors, textures, and combinations to surprise and delight you.</p>
+
+      <p>We also take pride in fostering a warm and friendly atmosphere. Whether you visit with family, friends, or solo, we aim to make every visit special. Our team is committed to providing excellent service with a genuine smile.</p>
+
+      <p>As a part of our community, we support local farmers by sourcing ingredients locally whenever possible and participate in events that give back to society. By choosing Anshi IceCream Shop, you’re enjoying more than a treat—you’re supporting a business that cares.</p>
+
+      <p>Join us on this flavorful journey. Whether you’re enjoying a classic favorite or trying our newest creation, we promise a scoop that will make you smile. We look forward to welcoming you soon!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Styles -->
+<style>
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+  filter: brightness(80%);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  animation: fadeInUp 1.2s ease-in-out;
+  color: #f1f1f1;
+}
+
+/* About Section */
+.about-content {
+  padding: 40px 15px;
+  max-width: 1000px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.glass-card p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.glass-card strong {
+  color: #d6336c;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .glass-card {
+    padding: 20px;
+  }
+}
+</style>
+{% endblock body %}

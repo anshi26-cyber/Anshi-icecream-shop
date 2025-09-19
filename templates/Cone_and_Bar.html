@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container my-5">
+  <h2 class="text-center mb-4 gradient-heading">Cone and Bar Collection 🍨</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+  
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQNRf0QUO-3R_d2dPQLi4E4EJzgRUgj_DUFA&s" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Dark Truffle</p>
+          <p class="price">₹60</p>
+
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4V3kt7qNSP3trUK0oy9oKE3Wyg0RBxP7hIUXTV9E1dLCFZXIJiS2ZS-wMgertzO-0Es&usqp=CAU" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Red Velvet</p>
+          <p class="price">₹70</p>
+
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://m.media-amazon.com/images/I/511ieLsCvEL._UF1000,1000_QL80_.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Choco Almond</p>
+          <p class="price">₹55</p>
+
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgIQrRf5zxlU7zy3vklc8mL-TQRnmOGaWGA&s" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Choco Browine</p>
+          <p class="price">₹50</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://tiaraspantry.com/upload/product/_b1f332e6100fd8595c86b5eb945d1e30.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Butterscotch Cone</p>
+          <p class="price">₹40</p>
+          
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center shadow-sm">
+        <img src="https://m.media-amazon.com/images/I/51fbsxxS40L._UF1000,1000_QL80_.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Strawberry Cone</p>
+          <p class="price">₹45</p>
+
+          <!-- ICON BUTTONS -->
+          <div class="icon-buttons">
+            <button class="btn cart"><i class="fas fa-cart-plus"></i></button>
+            <button class="btn heart"><i class="fas fa-heart"></i></button>
+            <button class="btn share"><i class="fas fa-share-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FONT AWESOME -->
+<link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- Custom CSS -->
+<style>
+body {
+  background: linear-gradient(135deg, #e1e9f4ff, #e4eef4ff);
+  font-family: 'Poppins', sans-serif;
+}
+  .gradient-heading {
+    box-shadow: 0 8px 20px rgba(255, 77, 109, 0.3);
+  color: #ff4d6d;
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient-heading:hover {
+  box-shadow: 0 12px 25px rgba(255, 77, 109, 0.5);
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #ffe0e6, #fff0f3);
+}
+
+  .icon-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .icon-buttons .btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .cart {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .heart {
+    border: 1px solid red;
+    color: red;
+    background: none;
+  }
+
+  .share {
+    border: 1px solid gray;
+    background: none;
+    color: gray;
+  }
+
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 5px 0;
+  }
+ .card {
+    transition: 0.3s ease;
+  }
+
+  .card-text {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+  }
+   .card:hover {
+    transform: scale(1.03);
+  }
+</style>
+{% endblock body %}
