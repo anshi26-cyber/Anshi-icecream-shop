@@ -24,13 +24,13 @@ def icecream(request):
     icecreams = IceCream.objects.all()
     return render(request, "icecream.html", {'icecreams': icecreams})
 
-def Cone_and_Bar(request):
-    icecreams = IceCream.objects.filter(name__icontains="Cone and Bar")
-    return render(request, "Cone_and_Bar.html", {'icecreams': icecreams})
+def cone_and_bar(request):
+    icecreams = IceCream.objects.filter(name__icontains="cone and bar")
+    return render(request, 'services/cone_and_bar.html', {'icecreams': icecreams})
 
-def Family_Pack_and_Cake(request):
-    icecreams = IceCream.objects.filter(name__icontains="Family Pack and Cake")
-    return render(request, "Family_Pack_and_Cake.html", {'icecreams': icecreams})
+def family_pack_and_cake(request):
+    icecreams = IceCream.objects.filter(name__icontains="family pack and cake")
+    return render(request, "services/family_pack_and_cake.html", {'icecreams': icecreams})
 
 # Search Functionality
 def search_view(request):

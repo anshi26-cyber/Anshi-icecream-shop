@@ -16,8 +16,8 @@ urlpatterns = [
 
     # Services
     path('services/icecream/', views.icecream, name='icecream'),
-    path('services/Cone-and-Bar/', views.Cone_and_Bar, name='cone_and_bar'),
-    path('services/Family-Pack-and-Cake/', views.Family_Pack_and_Cake, name='family_pack_and_cake'),
+    path('services/cone-and-bar/', views.cone_and_bar, name='cone_and_bar'),
+    path('services/family-pack-and-cake/', views.family_pack_and_cake, name='family_pack_and_cake'),
 
     # ✅ Search functionality URL
     path('search/', views.search_view, name='search'),
