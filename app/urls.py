@@ -16,11 +16,8 @@ urlpatterns = [
 
     # Services
     path('services/icecream/', views.icecream, name='icecream'),
-    path('services/cone-and-bar/', views.cone_and_bar, name='cone_and_bar'),
-    path('services/family-pack-and-cake/', views.family_pack_and_cake, name='family_pack_and_cake'),
-
-    # ✅ Search functionality URL
-    path('search/', views.search_view, name='search'),
+    path('services/cone_and_bar/', views.cone_and_bar, name='cone_and_bar'),
+    path('services/family_pack_and_cake/', views.family_pack_and_cake, name='family_pack_and_cake'),
 
 ]
 # Static & Media settings
